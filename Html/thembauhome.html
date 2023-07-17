@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="../css/thembau.css">
+
+    <!-- flickity css -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.min.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<style>
+  
+
+
+.homemenu{
+    display: none;
+    width: 80%;
+    height: 24rem;
+    background-color:black;
+    position: relative;
+    z-index: 4;
+    
+  }
+  .nav-item:hover .homemenu{
+    
+    display: block;
+   margin-left: -750px;
+    position: absolute;
+   
+}
+
+.row2{
+  margin-top: -3rem;
+}
+.col-4:hover .colimg{
+  transition: all 0.9s;
+  transform: translateY(-3rem);
+}
+.col-2:hover img{
+  transition: all 0.9s;
+  transform: translateY(-1rem);
+}
+
+.circle{
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    background-color: #123;
+    margin-top: -320px;
+    margin-left: 200px;
+}
+.themebau{
+    position: relative;
+    z-index: 3;
+
+  }
+  .project,.pages,.contact{
+    display: none;
+    background-color: black;
+    z-index: 4;
+  }
+  .nav-item:hover .project{
+    display: block;
+    position: absolute;
+  }
+  .nav-item:hover .pages{
+    display: block;
+    position: absolute;
+  }
+  .nav-item:hover .contact{
+    display: block;
+    position: absolute;
+  }
+  .single{
+    display: none;
+    background-color: black;
+    z-index: 4;
+  }
+.nav-item:hover .single{
+  display: block;
+}
+.single:hover .singlemenu{
+  display: block;
+}
+.demor2{
+  margin-left: 14rem;
+  margin-top: -5rem;
+}
+
+
+.abt{
+  border: 2px solid grey;
+}
+.col-3:hover .abt{
+  transition: all 0.9s;
+  transform: translateY(-3rem);
+}
+.upmenu:hover .menu{
+  transition: all 0.9s;
+  transform: translateY(-3rem);
+}
+
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #F90;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+.carousel-cell{
+  width: 90rem;
+  height: 70vh;
+}
+
+</style>
+
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark py-4">
+        <div class="container-fluid justify-content-around">
+            <a class="navbar-brand themebau "  href="#"> <p class="h4">Themebau.</p></a>
+
+        <ul class="navbar-nav h6">
+
+            <li class="nav-item py-2 mx-2 "><a class="nav-link home text-light " href="../Html/Themebau.html"><p class="h4">Home</p></a>
+            
+              <div class="container-fluid">
+              <div class="homemenu ">
+
+
+ <div class="main-carousel" data-flickity>
+     
+      <div  class="carousel-cell "><img src="../images/Thembau/home/colibri-creative-1920-1080.jpg"  width="100%" height="100%"  alt=""></div>
+
+      <div class="carousel-cell"><img src="../images/Thembau/home/happy-moments-1920-1080.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div class="carousel-cell"><img src="../images/Thembau/home/luxury-car-1920-1080.jpg"  width="100%" height="100%" alt=""></div>
+
+      <!-- <div style="width: 100%; height: 90vh;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-4-660-660.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div style="width: 100%; height: 90vh;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-5-1000-958.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div style="width: 100%; height: 90vh;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-6-660-660.jpg"  width="100%" height="100%" alt=""></div> -->
+    </div>
+
+                <!-- <div class="row mt-5 ">
+                  <div class="col-2"><a href="#"><img  src="../images/Thembau/main-home themebau.jpg" width="100%" height="50%" class="my-3 navimg " alt=""></a><div class="hometxt text-light text-center m-1"><span>Main Home</span></div></div>
+
+                  <div class="col-2"><a href="#"><img src="../images/Thembau/simple-portfolio themebau.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Simple Portfolio</span></div></div>
+
+                  <div class="col-2"><a href="#"><img src="../images/Thembau/creative-agency-themebau.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center  m-1"><span>Creative Agency</span></div></div>
+
+                  <div class="col-2"><a href="#"><img src="../images/Thembau/freelancer-portfolio-themebau.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Freelancer Portfolio</span></div></div>
+
+                  <div class="col-2"><a href="#"><img src="../images/Thembau/interactive-dark-themebau.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Interactive Dark</span></div></div>
+
+                  <div class="col-2"><a href="#"><img src="../images/Thembau/digital-agency-themebau.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Digital Agency</span></div></div>
+
+                  <div class="col-2 row2"><a href="#"><img src="../images/Thembau/fullscreen-slider-themebau.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Fullscreen Slider</span></div></div>
+
+                  <div class="col-2 row2"><a href="#"><img src="../images/Thembau/carousel-light-740-362.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Carousel Light</span></div></div>
+
+                  <div class="col-2 row2"><a href="#"><img src="../images/Thembau/carousel-dark-740-362.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Carousel dark</span></div></div>
+
+                  <div class="col-2 row2"><a href="#"><img src="../images/Thembau/interactive-light-740-600.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Interactive Light</span></div></div>
+                  
+                  <div class="col-2 row2"><a href="#"><img src="../images/Thembau/left-menu-740-600.jpg" width="100%" height="50%" class="my-3" alt=""></a><div class="hometxt text-light text-center m-1"><span>Left Menu</span></div></div>
+                </div> -->
+              </div>
+            </div>
+            </li>
+
+
+            <li class="nav-item py-2 mx-2"><a class="nav-link text-light" href="#"><p class="h4">project</p></a>
+              <nav class="navbar project">
+                <ul class="navbar-nav flex-column ps-2">
+                    <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">1 Column</a></li>
+                    <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">2 Column</a></li>
+                    <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">3 Column</a></li>
+                    <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">4 Column</a></li>
+                    <li class="pt-2"><a href="#" class="nav-bar  text-white  text-decoration-none">
+       </a>               <div class="dropdown dropend">
+                        <button type="button" style="border: 1px solid black;" class="btn btn-black text-white dropdown" data-bs-toggle="dropdown">
+                        <span class="h5 single">  Single works</span>
+                        </button>
+                        <ul class=" dropdown-menu bg-black text-white singlemenu">
+                          <li><a class="dropdown-item bg-black text-white" href="#">Style 1</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="#">Style 2</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="#">Style 3</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="#">Style 4</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="#">Style 5</a></li>
+                          <li><a class="dropdown-item bg-black text-white" href="#">Style 6</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </nav>
+            
+            </li>
+
+            <li class="nav-item py-2 mx-2"><a class="nav-link text-light" href="#"> <p class="h4">pages</p></a>
+              <nav class="navbar pages">
+                <ul class="navbar-nav flex-column ps-2">
+                  <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">Contact Us</a></li>
+                  <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">About Us</a></li>
+                  <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">Blog</a></li>
+                  <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">404</a></li> 
+                </ul>
+            </nav>
+
+            </li>
+
+            <li class="nav-item py-2 mx-2 dropdown "><a class="nav-link  text-light" href="#" data-bs-toggle="dropdown"> <p class="h4">contact</p></a>
+              <nav class="navbar contact">
+                <ul class="navbar-nav flex-column ps-2">
+                  <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">Contact 1</a></li>
+                  <li class="pt-2"><a href="#" class="nav-item text-white  text-decoration-none">Contact 2</a></li> 
+                </ul>
+            </nav>
+    
+            
+        </li>
+
+          <div ><a class="btn bg-light  pe-5 ps-5 py-2 " href="#"><h6 class="pt-2">purchase</h6><div class="ball-wrapper">
+            <div class="ball"></div>
+            <div class="ball-shadow"></div>
+          </div>  </a> </div>
+        
+        </ul>
+    </div>
+
+    </nav>
+  </header>
+     
+      <div class="circle bg-dark text-center position-absolute" data-aos="flip-down" data-aos-duration="2000"></div>
+  <main>
+<div class="container-fluid bg-black text-light ">
+    <h1 class="text-center pt-5 themebau " style="font-size: 7rem;">Themebau.</h1>
+    <p class="text-center h5 pb-5">Themebau is a stylish universal template for all your projects & creative <br>  output. Minimalistic and easy to use, it has everything you need to <br>  launch your website</p>
+    
+
+    <!-- <div class="container">
+      <div class="row my-5">
+       
+        <div class="col-4 "><a class="text-decoration-none text-light text-center " href="#"><img class="colimg" src="../images/Thembau/main-home themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Main home</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img  class="colimg" src="../images/Thembau/simple-portfolio themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Simple Portfolio</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img  class="colimg" src="../images/Thembau/creative-agency-themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Creative Agency</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img class="colimg"  src="../images/Thembau/freelancer-portfolio-themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Freelancer Portfolio</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img  class="colimg" src="../images/Thembau/interactive-dark-themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Interactive Dark</h3></a></div>
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img class="colimg"  src="../images/Thembau/digital-agency-themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Digital Agency</h3></a></div>
+
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img  class="colimg" src="../images/Thembau/fullscreen-slider-themebau.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Fullscreen Slider</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img class="colimg"  src="../images/Thembau/carousel-light-740-362.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Carousel Light</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img  class="colimg" src="../images/Thembau/carousel-dark-740-362.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Carousel dark</h3></a></div>
+
+
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img class="colimg"  src="../images/Thembau/interactive-light-740-600.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Interactive Light</h3></a></div>
+
+        <div class="col-4"><a class="text-decoration-none text-light text-center " href="#"><img  class="colimg" src="../images/Thembau/left-menu-740-600.jpg" width="100%" alt=""> <h3 class="mt-4 pb-5">Left Menu</h3></a></div>
+       
+    </div>
+</div> -->
+</div>
+
+
+<div class="container  py-5" style="margin-top: 20rem;">
+  <div class="row demo justify-content-center gap-5">
+    <div class="col-4">
+      <img src="../images/Thembau/demo-1-940-602.jpg" width="100%" alt="">
+      
+    </div>
+    <div class="col-4"><p  class="h2 mt-5">Present your work in a <br> unique way 💪</p></div>
+  </div>
+
+  <div class="row demo justify-content-center gap-5 demor2">
+    <div class="col-4">
+      <img src="../images/Thembau/demo-2-740-560.jpg" width="100%" alt="">
+      
+    </div>
+    <div class="col-4"><p class="h6">Themebau has 1/2/3/4 columns layouts to showcase your work and collections. Choose between the 19 types of layouts to create your portfolio.</p>
+      <a href="#"><button type="button" class="btn btn-dark px-5 py-2 mt-3">View Pages</button></a>
+    </div>
+  </div>
+
+
+  <div class="row py-5">
+    <div class="col-2"><img src="../images/Thembau/box1.png" alt=""></div>
+    <div class="col-2"><img src="../images/Thembau/box2.png" alt=""></div>
+    <div class="col-2"><img src="../images/Thembau/box3.png" alt=""></div>
+    <div class="col-2"><img src="../images/Thembau/box4.png" alt=""></div>
+    <div class="col-2"><img src="../images/Thembau/box5.png" alt=""></div>
+    <div class="col-2"><img src="../images/Thembau/box6.png" alt=""></div>
+  </div>
+  
+  <a class=""  style="text-decoration: none;" href="#"> <p class="h3 text-dark text-center">and more... 🔥</p></a>
+
+</div>
+
+
+<!-- <div class="container-fluid bg-black text-light" style="height: 100vh;">
+  <p class="h1 text-center py-5" >Projects Showcase</p>
+  <div class="container">
+    <div class="carousel gx-5" data-flickity>
+     
+      <div style="width: 40rem; height: 70vh; margin-left: 6rem;" class="carousel-cell "><img src="../images/Thembau/portfolio-single-1-1000-958.jpg"  width="100%" height="100%"  alt=""></div>
+
+      <div style="width: 25rem; height: 40vh; margin-top: 15vh;margin-left: 6rem;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-2-660-660.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div style="width: 40rem; height: 70vh; margin-left: 6rem;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-3-1000-958.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div style="width: 25rem; height: 40vh; margin-top: 15vh;margin-left: 6rem;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-4-660-660.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div style="width: 40rem; height: 70vh; margin-left: 6rem;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-5-1000-958.jpg"  width="100%" height="100%" alt=""></div>
+
+      <div style="width: 25rem; height: 40vh; margin-top: 15vh;margin-left: 6rem;" class="carousel-cell"><img src="../images/Thembau/portfolio-single-6-660-660.jpg"  width="100%" height="100%" alt=""></div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="container ">
+  <div class="row justify-content-evenly my-5">
+  <div class="col-4"><p class="h2">Practical Inner pages <br> for everything you <br> may need.</p></div>
+  <div class="col-4"><p class="h5">Themebau is packed with a set of practical <br> inner pages for various uses. Choose your <br> favorites & customize them to your needs.</p></div>
+</div>
+
+
+
+
+<div class="row my-5 ">
+  <div data-aos="zoom-in-right"></div>
+  <div class="col-3"><a class="text-decoration-none text-center " href="#"><img class="abt" src="../images/Thembau/about-us-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">About Us</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/about-us-2-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">About Us V.2</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/about-me-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">About Me</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/services-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Services</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/single-service-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Single Service</h3></a></div>
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/contact-us-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Contact Us</h3></a></div>
+
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/contact-us-2-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Contact Us V.2</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/404-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">404 Page</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/blog-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Blog</h3></a></div>
+
+
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/blog-2-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Blog V.2</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt"src="../images/Thembau/single-post-540-460.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Single Post</h3></a></div>
+
+  <div class="col-3"><a class="text-decoration-none  text-center " href="#"><img  class="abt" src="../images/Thembau/coming-soon-540-264.jpg" width="90%" alt=""> <h3 class="mt-4 pb-5 text-black">Coming Soon</h3></a></div>
+ 
+</div>
+</div>
+
+
+<div class="container-fluid bg-black text-light" style="height: 100vh;">
+  <p class="h1 text-center " style="padding-top: 20vh;font-size: 5rem;">Menu Style</p>
+  <div class="container" style="margin-top: 20vh;">
+    <div class="carousel gx-5" data-flickity>
+      <div  style="width: 25rem; height: 25vh;margin: 2rem;" class="carousel-cell upmenu"> <a class="text-decoration-none  text-center " href="#"><img class="menu" src="../images/Thembau/classic-menu-740-362.jpg"  width="100%" height="100%"  alt=""><h3 class="mt-1 pb-5 text-white">Classic Menu</h3></a></div>
+
+      <div style="width: 25rem; height: 25vh; margin: 2rem;" class="carousel-cell upmenu"><a class="text-decoration-none  text-center " href="#"><img class="menu" src="../images/Thembau/white-left-menu-740-362.jpg"  width="100%" height="100%" alt=""><h3 class="pb-5 mt-1 text-white">White Left Menu</h3></a></div>
+
+      <div style="width: 25rem; height: 25vh;margin: 2rem;" class="carousel-cell upmenu"> <a class="text-decoration-none  text-center " href="#"><img class="menu" src="../images/Thembau/dark-center-menu-740-362.jpg"  width="100%" height="100%" alt=""><h3 class="mt-1 pb-5 text-white">Dark Center Menu</h3></a></div>
+
+      <div style="width: 25rem; height: 25vh;margin: 2rem;" class="carousel-cell upmenu"> <a class="text-decoration-none  text-center " href="#"><img class="menu" src="../images/Thembau/left-menu-740-362.jpg"  width="100%" height="100%" alt=""><h3 class=" mt-1 text-white">Left Menu</h3></a></div>
+
+     
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid " style="background-color: #f5f5f5;">
+  <div class="row pt-5 justify-content-center">
+  <div class="col-4"><img src="../images/Thembau/responsive-1200-1070.jpg" width="100%" height="100%" alt=""></div>
+  <div class="col-4"><p class="h1" style="padding-top: 80px;">
+    Fully responsive and <br> retina ready 👑</p> <br> <p class="h5"> Themebau is designed to look great on desktop <br> computers, tablets and mobile devices. Every <br> element 100% responsive & retina ready.</p></div>
+</div>
+</div>
+ 
+
+<div class="comtainer-fluid py-5 bg-black">
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-4"><p class="text-white p-2 h5"> &#9956 11 Homepage variations</p>
+        <p class="text-white p-2 h5"> &#9956 19 Portfolio styles & 6 Single Projects &nbsp &nbsp &nbsp  pages</p>
+        <p class="text-white p-2 h5"> &#9956 4 Menu & 3 Footer styles</p>
+        <p class="text-white p-2 h5"> &#9956 Creative Blog & Inner pages</p>
+        <p class="text-white p-2 h5"> &#9956 100% Responsive & Retina ready</p>
+      
+      </div>
+
+      <div class="col-4"><p class="text-white p-2 h5"> &#9956 Gulp Tooling to automate Workflow</p>
+        <p class="text-white p-2 h5"> &#9956 W3C valid HTML </p>
+        <p class="text-white p-2 h5"> &#9956 Easy customization via HTML classes &nbsp &nbsp &nbsp  & attributes  </p>
+        <p class="text-white p-2 h5"> &#9956 Smooth Animations </p>
+        <p class="text-white p-2 h5"> &#9956 Smooth Parallax for images & videos</p>
+      
+      </div>
+
+      <div class="col-4"><p class="text-white p-2 h5"> &#9956 11 Developers ready: Webpack, Gulp, &nbsp &nbsp &nbsp  SCSS, Nunjucks, NPM</p>
+        <p class="text-white p-2 h5"> &#9956 Google Fonts </p>
+        <p class="text-white p-2 h5"> &#9956 Included generated HTML <br> &nbsp &nbsp &nbsp version (ready to use without <br> &nbsp &nbsp &nbsp  developer tools) </p>
+        <p class="text-white p-2 h5"> &#9956 Google Maps </p>
+      
+      </div>
+
+    </div>
+
+    <div class="text-center"><a class="text-decoration-none " href="#"><span class="h3 text-white text-center">and more... 🔥</span></a></div>
+  </div>
+</div>
+
+
+
+  <div class="container my-5 py-4">   <a href="#" class="nav-link display-4"><u class="h1" style="font-size: 5rem;">Get Themebau</u><span class="h1" style="font-size: 5rem;"> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  &#8594 </span></a> </div>
+</div>
+         
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+
+ <!-- Flickity JavaScript -->
+ <script>
+ var elem = document.querySelector('.main-carousel');
+ var flkty = new Flickity( elem, {
+   // options
+   cellAlign: 'left',
+   contain: true
+ });
+</script>
+<script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+</body>
+
+</html>

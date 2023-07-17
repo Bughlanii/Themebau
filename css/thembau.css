@@ -1,0 +1,96 @@
+
+  .homemenu{
+    display: none;
+    width: 80%;
+    height: 24rem;
+    background-color:black;
+    position: relative;
+    z-index: 4;
+    
+  }
+  .nav-item:hover .homemenu{
+    
+    display: block;
+   margin-left: -750px;
+    position: absolute;
+   
+}
+
+.row2{
+  margin-top: -3rem;
+}
+.col-4:hover .colimg{
+  transition: all 0.9s;
+  transform: translateY(-3rem);
+  
+}
+.col-2:hover img{
+  transition: all 0.9s;
+  transform: translateY(-1rem);
+}
+
+.circle{
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    background-color: #123;
+    margin-top: -320px;
+    margin-left: 200px;
+}
+.themebau{
+    position: relative;
+    z-index: 3;
+
+  }
+  .project,.pages,.contact{
+    display: none;
+    background-color: black;
+    z-index: 4;
+  }
+  .nav-item:hover .project{
+    display: block;
+    position: absolute;
+  }
+  .nav-item:hover .pages{
+    display: block;
+    position: absolute;
+  }
+  .nav-item:hover .contact{
+    display: block;
+    position: absolute;
+  }
+  .single{
+    display: none;
+    background-color: black;
+    z-index: 4;
+  }
+.nav-item:hover .single{
+  display: block;
+}
+.single:hover .singlemenu{
+  display: block;
+}
+.demor2{
+  margin-left: 14rem;
+  margin-top: -5rem;
+}
+
+
+.abt{
+  border: 2px solid grey;
+}
+.col-3:hover .abt{
+  transition: all 0.9s;
+  transform: translateY(-3rem);
+}
+.upmenu:hover .menu{
+  transition: all 0.9s;
+  transform: translateY(-3rem);
+}
+
+.arow:hover .arrow{
+  transition: all 2s;
+ transform:translateX(5rem)
+}
+
+
